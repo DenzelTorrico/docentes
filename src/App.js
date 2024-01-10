@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+          <h1>Gestion De Docentes</h1>
+          <div className='filtros'>
+            
+            <div>
+                <fieldset>
+                    <legend>Filtrado Por Nombre</legend>
+                    <input className='form-control' type='text' placeholder='Seleccione Nombre'/>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Filtrado Por Grado</legend>
+                    <input type='text' className='form-control' placeholder='Seleccione Grado'/>
+                </fieldset>
+            </div>
+          </div>
+          <table className='table'>
+              <tr>
+                <th>Apellidos y nombres</th>
+                <th>Doc Identidad</th>
+                <th>Correo electrónico</th>
+                <th>Celular</th>
+                <th>Grado</th>
+                <th>Cv</th>
+              </tr>
+          </table>
     </div>
   );
 }

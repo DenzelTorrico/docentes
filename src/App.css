@@ -1,3 +1,17 @@
+
+.filtros{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 20px;
+}
+.filtros div{
+  width: 50%;
+  padding: 10px;
+}
+
+
+
 .App {
   text-align: center;
 }
